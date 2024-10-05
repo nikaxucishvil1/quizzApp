@@ -1,15 +1,14 @@
-import QuestionBtn from "./QuestionBtn";
-import Progress from "./Progress";
 import { useState } from "react";
-import { VscError } from "react-icons/vsc";
 import QuizInProgress from "./QuizInProgress";
 import QuizEnded from "./QuizEnded";
 
 const Quiz = (props: {
+  theme: "dark" | "light";
   activeQuiz: Quiz;
   setActiveQuiz: React.Dispatch<React.SetStateAction<Quiz | null>>;
+  setQuizName: React.Dispatch<React.SetStateAction<string>>;
 }) => {
-  const { activeQuiz, setActiveQuiz } = props;
+  const { activeQuiz, setActiveQuiz, theme, setQuizName } = props;
   const [goToNext, setgoToNext] = useState(false);
   const [error, setError] = useState(false);
   const [check, setCheck] = useState(false);
@@ -38,9 +37,14 @@ const Quiz = (props: {
           setClientAnswer={setClientAnswer}
           setIsDisabled={setIsDisabled}
           shownQuestionOBJ={shownQuestionOBJ}
+          theme={theme}
         />
       ) : (
-        <QuizEnded setActiveQuiz={setActiveQuiz} activeQuiz={activeQuiz} />
+        <QuizEnded
+          setQuizName={setQuizName}
+          setActiveQuiz={setActiveQuiz}
+          activeQuiz={activeQuiz}
+        />
       )}
     </div>
   );

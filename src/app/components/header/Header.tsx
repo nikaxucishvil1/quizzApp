@@ -7,9 +7,12 @@ const Header = (props: Header) => {
   const { quizName, setTheme, theme } = props;
   return (
     <header
-      className={`w-full p-4 flex items-center justify-${
-        quizName && quizName !== "" ? "between" : "end"
-      }`}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: quizName && quizName !== "" ? "between" : "end",
+      }}
+      className={`w-full p-4`}
     >
       {quizName && quizName !== "" && (
         <span className="rubik w-full text-[#313E51] font-[500] text-[18px] dark:text-[#FFFFFF]">

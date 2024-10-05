@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import Header from "./components/header/Header";
 import quizDataDb from "./db/quiz.json";
@@ -41,7 +40,12 @@ export default function Home() {
         <div className="bg-[#F4F6FA] dark:bg-[#313E51] h-screen">
           <Header theme={theme} setTheme={setTheme} quizName={quizName} />
           {activeQuiz ? (
-            <Quiz activeQuiz={activeQuiz} setActiveQuiz={setActiveQuiz} />
+            <Quiz
+              theme={theme}
+              activeQuiz={activeQuiz}
+              setActiveQuiz={setActiveQuiz}
+              setQuizName={setQuizName}
+            />
           ) : (
             <ChooseQuiz
               quizData={quizData}

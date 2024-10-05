@@ -44,6 +44,9 @@ interface QuestionBtn {
   isDisabled: boolean;
   setError: React.Dispatch<React.SetStateAction<boolean>>;
   setClientAnswer: React.Dispatch<React.SetStateAction<string>>;
+  isSubmitting: boolean;
+  focus: string;
+  setFocus: React.Dispatch<React.SetStateAction<string>>;
 }
 interface QuizInProgress {
   activeQuiz: Quiz;
@@ -59,8 +62,10 @@ interface QuizInProgress {
   setIsDisabled: React.Dispatch<React.SetStateAction<boolean>>;
   setActiveQuiz: React.Dispatch<React.SetStateAction<Quiz | null>>;
   error: boolean;
+  theme: "light" | "dark";
 }
 interface QuizEnded {
   setActiveQuiz: React.Dispatch<React.SetStateAction<Quiz | null>>;
+  setQuizName: React.Dispatch<React.SetStateAction<string>>;
   activeQuiz: Quiz;
 }

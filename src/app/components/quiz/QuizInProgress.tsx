@@ -1,6 +1,7 @@
 import { VscError } from "react-icons/vsc";
 import QuestionBtn from "./QuestionBtn";
 import Progress from "./Progress";
+import { useState } from "react";
 
 const QuizInProgress = (props: QuizInProgress) => {
   const {
@@ -17,102 +18,96 @@ const QuizInProgress = (props: QuizInProgress) => {
     setIsDisabled,
     setActiveQuiz,
     error,
+    theme,
   } = props;
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [focus, setFocus] = useState("");
+
+  const handleSubmit = () => {
+    console.log(clientAnswer);
+    setError(clientAnswer === "");
+
+    if (clientAnswer !== "") {
+      setCheck(true);
+      setgoToNext(true);
+      setIsDisabled(true);
+      setIsSubmitting(true);
+
+      if (clientAnswer === shownQuestionOBJ?.correctAnswer) {
+        setActiveQuiz((prev) => {
+          if (!prev) {
+            return null;
+          } else {
+            return {
+              ...prev,
+              correctedAnswer: (prev?.correctedAnswer || 0) + 1,
+            };
+          }
+        });
+      }
+    }
+  };
+
+  const handleNextQuestion = () => {
+    setgoToNext(false);
+    setCheck(false);
+    setIsDisabled(false);
+    setActiveQuiz((prev) => {
+      if (!prev) {
+        return null;
+      } else {
+        return {
+          ...prev,
+          activeQuestion: prev.activeQuestion + 1,
+        };
+      }
+    });
+    setClientAnswer("");
+    setFocus("")
+  };
+
   return (
     <div className="flex flex-col gap-3">
       <span className="rubik italic text-[14px] text-[#626C7F] dark:text-[#ABC1E1]">
         Question {activeQuiz.activeQuestion} of {activeQuiz.questions.length}
       </span>
-      <h1 className="rubik text-[20px] font-[500] text-[#313E51]">
+      <h1 className="rubik text-[20px] font-[500] text-[#313E51] dark:text-[#FFFFFF]">
         {shownQuestionOBJ?.question}
       </h1>
       <div className="pt-4 pb-4">
-        <Progress progress={activeQuiz.activeQuestion * 10} />
+        <Progress progress={activeQuiz.activeQuestion * 10} theme={theme} />
       </div>
       <div>
         {shownQuestionOBJ?.answers && (
           <div className="flex flex-col gap-3">
-            <QuestionBtn
-              answer={shownQuestionOBJ.answers.A}
-              option={"A"}
-              setError={setError}
-              setClientAnswer={setClientAnswer}
-              check={check}
-              correctAnswer={shownQuestionOBJ.correctAnswer}
-              clientAnswer={clientAnswer}
-              isDisabled={isDisabled}
-            />
-            <QuestionBtn
-              answer={shownQuestionOBJ.answers.B}
-              option={"B"}
-              setError={setError}
-              setClientAnswer={setClientAnswer}
-              check={check}
-              correctAnswer={shownQuestionOBJ.correctAnswer}
-              clientAnswer={clientAnswer}
-              isDisabled={isDisabled}
-            />
-            <QuestionBtn
-              answer={shownQuestionOBJ.answers.C}
-              option={"C"}
-              setError={setError}
-              setClientAnswer={setClientAnswer}
-              check={check}
-              correctAnswer={shownQuestionOBJ.correctAnswer}
-              clientAnswer={clientAnswer}
-              isDisabled={isDisabled}
-            />
-            <QuestionBtn
-              answer={shownQuestionOBJ.answers.D}
-              option={"D"}
-              setError={setError}
-              setClientAnswer={setClientAnswer}
-              check={check}
-              correctAnswer={shownQuestionOBJ.correctAnswer}
-              clientAnswer={clientAnswer}
-              isDisabled={isDisabled}
-            />
-
+            {Object.entries(shownQuestionOBJ.answers).map(([key, answer]) => (
+              <QuestionBtn
+                key={key}
+                answer={answer}
+                option={key}
+                setError={setError}
+                setClientAnswer={setClientAnswer}
+                check={check}
+                correctAnswer={shownQuestionOBJ.correctAnswer}
+                clientAnswer={clientAnswer}
+                isDisabled={isDisabled}
+                isSubmitting={isSubmitting}
+                focus={focus}
+                setFocus={setFocus}
+              />
+            ))}
             {goToNext ? (
               <button
-                onClick={() => {
-                  setgoToNext(false);
-                  setCheck(false);
-                  setIsDisabled(false);
-                  setActiveQuiz((prev) => {
-                    if (!prev) {
-                      return null;
-                    }
-                    return {
-                      ...prev,
-                      activeQuestion: prev.activeQuestion + 1,
-                    };
-                  });
-                }}
-                className="w-full bg-[#A729F5] text-[18px] text-[#FFFF] p-2 rounded-xl"
+                onClick={handleNextQuestion}
+                className="tubik font-[500] w-full bg-[#A729F5] text-[18px] text-[#FFFF] p-2 rounded-xl"
               >
                 Next Question
               </button>
             ) : (
               <button
-                onClick={() => {
-                  clientAnswer === "" && setError(true);
-                  setCheck(true);
-                  setgoToNext(true);
-                  setIsDisabled(true);
-                  if (clientAnswer === shownQuestionOBJ.correctAnswer) {
-                    setActiveQuiz((prev) => {
-                      if (!prev) {
-                        return null;
-                      }
-                      return {
-                        ...prev,
-                        correctedAnswer: prev.correctedAnswer + 1,
-                      };
-                    });
-                  }
-                }}
-                className="w-full bg-[#A729F5] text-[18px] text-[#FFFF] p-2 rounded-xl"
+                onClick={handleSubmit}
+                className="tubik font-[500] w-full bg-[#A729F5] text-[18px] text-[#FFFF] p-2 rounded-xl"
               >
                 Submit
               </button>
