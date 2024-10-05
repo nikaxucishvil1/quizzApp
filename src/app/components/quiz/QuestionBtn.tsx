@@ -32,7 +32,7 @@ const QuestionBtn = (props: QuestionBtn) => {
       <div className="flex items-center gap-3">
         <div
           className={`${
-            isCorrectAndAnsweredCorrect && "bg-[#26D782] text-[#FFFF]"
+            isCorrectAndAnsweredCorrect && "!bg-[#26D782] text-[#FFFF]"
           } ${
             isFalseAndAnsweredFalse && "!bg-[#EE5454] !text-[#FFFF]"
           } p-1 pl-3 pr-3 bg-[#F4F6FA] flex items-center justify-center rounded-md group-focus:bg-[#A729F5] text-[#626C7F] group-focus:text-[#FFFF]`}
