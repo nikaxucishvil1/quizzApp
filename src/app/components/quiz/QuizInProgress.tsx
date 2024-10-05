@@ -76,7 +76,7 @@ const QuizInProgress = (props: QuizInProgress) => {
         {shownQuestionOBJ?.question}
       </h1>
       <div className="pt-4 pb-4">
-        <Progress progress={activeQuiz.activeQuestion * 10} theme={theme} />
+        <Progress progress={activeQuiz.activeQuestion * 20} theme={theme} />
       </div>
       <div>
         {shownQuestionOBJ?.answers && (
