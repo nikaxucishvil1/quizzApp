@@ -4,11 +4,6 @@ import { AntSwitch } from "./services/createMui";
 import { useEffect } from "react";
 import { getTheme, toggleTheme } from "./services/getSetTheme";
 
-interface ToggleBtnProps {
-  theme: "dark" | "light";
-  setTheme: React.Dispatch<React.SetStateAction<"dark" | "light">>;
-}
-
 const ToggleButton = (props: ToggleBtnProps) => {
   const { theme, setTheme } = props;
 
