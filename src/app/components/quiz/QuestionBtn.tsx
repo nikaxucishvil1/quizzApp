@@ -44,7 +44,7 @@ const QuestionBtn = (props: QuestionBtn) => {
           } ${
             isFalseAndAnsweredFalse && "!bg-[#EE5454] !text-[#FFFF]"
           } p-1 pl-3 pr-3 md:pl-4  md:pr-4 bg-[#F4F6FA] flex items-center justify-center rounded-md text-[#626C7F] ${
-            focus === option && "!bg-[#A729F5]"
+            focus === option && !isCorrectAndAnsweredCorrect && "!bg-[#A729F5]"
           } ${focus !== option && !isDisabled && "group-hover:!bg-[#F6E7FF]"}`}
         >
           <span
