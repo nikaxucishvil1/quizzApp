@@ -12,24 +12,22 @@ const Header = (props: Header) => {
         alignItems: "center",
         justifyContent: quizName && quizName !== "" ? "between" : "end",
       }}
-      className={`w-full p-4`}
+      className={`w-full p-4 md:w-[70%] xl:w-full`}
     >
       {quizName && quizName !== "" && (
-        <span className="rubik w-full text-[#313E51] font-[500] text-[18px] dark:text-[#FFFFFF]">
+        <span className="rubik w-full text-[#313E51] font-[500] text-[18px] dark:text-[#FFFFFF] md:text-[28px]">
           {quizName}
         </span>
       )}
-      <div className="flex gap-1 items-center">
+      <div className="flex gap-1 items-center md:gap-2 xl:gap-4">
         <WiDaySunny
           color={theme === "light" ? "#626C7F" : "#FFFFFF"}
-          width={"100%"}
-          height={"100%"}
+          className="md:w-[24px] md:h-[24px]"
         />
         <ToggleButton setTheme={setTheme} theme={theme} />
         <GoMoon
           color={theme === "light" ? "#626C7F" : "#FFFFFF"}
-          width={"100%"}
-          height={"100%"}
+          className="md:w-[24px] md:h-[24px]"
         />
       </div>
     </header>

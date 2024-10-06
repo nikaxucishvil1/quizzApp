@@ -12,7 +12,7 @@ const ToggleButton = (props: ToggleBtnProps) => {
   }, [setTheme, theme]);
 
   return (
-    <FormGroup>
+    <FormGroup className="md:scale-125">
       <AntSwitch
         onChange={() => {
           toggleTheme(theme, setTheme);

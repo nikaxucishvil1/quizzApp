@@ -12,6 +12,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        hoverBg:
+          "rgba(255, 255, 255, 0.50) 100%), var(--Purple, #A729F5)",
       },
     },
   },

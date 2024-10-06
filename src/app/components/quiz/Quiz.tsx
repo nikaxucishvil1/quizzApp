@@ -1,6 +1,7 @@
 import { useState } from "react";
 import QuizInProgress from "./QuizInProgress";
 import QuizEnded from "./QuizEnded";
+import { VscError } from "react-icons/vsc";
 
 const Quiz = (props: {
   theme: "dark" | "light";
@@ -21,9 +22,10 @@ const Quiz = (props: {
   const isFinished = activeQuiz.activeQuestion > activeQuiz.questions.length;
 
   return (
-    <div className="p-4 flex flex-col">
+    <div className="p-4 flex flex-col md:items-center md:w-full  xl:h-full xl:items-center xl:justify-center">
       {!isFinished ? (
-        <QuizInProgress
+        <div className="w-full md:flex md:flex-col md:items-center md:justify-center ">
+          <QuizInProgress
           activeQuiz={activeQuiz}
           check={check}
           clientAnswer={clientAnswer}
@@ -39,6 +41,16 @@ const Quiz = (props: {
           shownQuestionOBJ={shownQuestionOBJ}
           theme={theme}
         />
+        {error && (
+          <div className="flex items-center justify-center gap-2 pt-5 xl:w-[70%] xl:justify-end">
+            <VscError color="#EE5454" className="w-[24px] h-[24px] md:w-[40px] md:h-[40px]" />
+            <span className="rubik text-[#EE5454] text-[18px] font-[400] md:text-[28px]">
+              Please select an answer
+            </span>
+          </div>
+        )}
+        </div>
+        
       ) : (
         <QuizEnded
           setQuizName={setQuizName}

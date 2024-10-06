@@ -64,23 +64,28 @@ const QuizInProgress = (props: QuizInProgress) => {
       }
     });
     setClientAnswer("");
-    setFocus("")
+    setFocus("");
   };
 
   return (
-    <div className="flex flex-col gap-3">
-      <span className="rubik italic text-[14px] text-[#626C7F] dark:text-[#ABC1E1]">
-        Question {activeQuiz.activeQuestion} of {activeQuiz.questions.length}
-      </span>
-      <h1 className="rubik text-[20px] font-[500] text-[#313E51] dark:text-[#FFFFFF]">
-        {shownQuestionOBJ?.question}
-      </h1>
-      <div className="pt-4 pb-4">
-        <Progress progress={activeQuiz.activeQuestion * 20} theme={theme} />
+    <div className="flex flex-col gap-3 md:w-[70%] xl:flex-row xl:w-full xl:items-center xl:justify-between xl:gap-20">
+      <div className="flex flex-col gap-4 xl:w-full xl:h-full xl:justify-between xl:pb-20">
+        <div className="flex flex-col gap-5">
+          <span className="rubik italic text-[14px] text-[#626C7F] dark:text-[#ABC1E1] md:text-[20px]">
+            Question {activeQuiz.activeQuestion} of{" "}
+            {activeQuiz.questions.length}
+          </span>
+          <h1 className="rubik text-[20px] font-[500] text-[#313E51] dark:text-[#FFFFFF] md:text-[36px]">
+            {shownQuestionOBJ?.question}
+          </h1>
+        </div>
+        <div className="pt-4 pb-4">
+          <Progress progress={activeQuiz.activeQuestion * 20} theme={theme} />
+        </div>
       </div>
-      <div>
+      <div className="xl:w-full">
         {shownQuestionOBJ?.answers && (
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 md:gap-7">
             {Object.entries(shownQuestionOBJ.answers).map(([key, answer]) => (
               <QuestionBtn
                 key={key}
@@ -100,25 +105,17 @@ const QuizInProgress = (props: QuizInProgress) => {
             {goToNext ? (
               <button
                 onClick={handleNextQuestion}
-                className="tubik font-[500] w-full bg-[#A729F5] text-[18px] text-[#FFFF] p-2 rounded-xl"
+                className="tubik hoverBg font-[500] w-full bg-[#A729F5] text-[18px] text-[#FFFF] p-2 rounded-xl md:text-[28px] md:rounded-3xl md:p-5"
               >
                 Next Question
               </button>
             ) : (
               <button
                 onClick={handleSubmit}
-                className="tubik font-[500] w-full bg-[#A729F5] text-[18px] text-[#FFFF] p-2 rounded-xl"
+                className="tubik hoverBg font-[500] w-full bg-[#A729F5] text-[18px] text-[#FFFF] p-2 rounded-xl md:text-[28px] md:rounded-3xl md:p-5"
               >
                 Submit
               </button>
-            )}
-            {error && (
-              <div className="flex items-center justify-center gap-2">
-                <VscError color="#EE5454" size={20} />
-                <span className="rubik text-[#EE5454] text-[18px] font-[400]">
-                  Please select an answer
-                </span>
-              </div>
             )}
           </div>
         )}
