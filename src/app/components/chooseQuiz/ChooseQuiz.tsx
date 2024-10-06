@@ -2,6 +2,13 @@ import { GiMaterialsScience } from "react-icons/gi";
 
 const ChooseQuiz = (props: ChoozeQuiz) => {
   const { quizData, setActiveQuiz, setQuizName } = props;
+  
+  const RANDOM_QUIZ_NUMBER = 5;
+
+  const randomFiveQuiz = quizData
+    .sort(() => 0.5 - Math.random())
+    .slice(0, RANDOM_QUIZ_NUMBER);
+
   return (
     <div className="p-4 pt-0 flex flex-col xl:flex-row xl:justify-around md:pt-20 gap-7 md:w-[70%] md:h-full xl:items-center xl:p-0 xl:w-full">
       <div className="xl:h-[50%]">
@@ -20,7 +27,7 @@ const ChooseQuiz = (props: ChoozeQuiz) => {
         </header>
       </div>
       <main className="flex flex-col gap-4 xl:w-[40%] xl:h-[50%]">
-        {quizData.map((quiz) => (
+        {randomFiveQuiz.map((quiz) => (
           <button
             key={quiz.quizId}
             onClick={() => {

@@ -32,32 +32,32 @@
         "question": "What is the largest ocean on Earth?",
         "correctAnswer": "Pacific Ocean",
         "answers": {
-          "A": "Pacific Ocean",
+          "A": "Atlantic Ocean",
           "B": "Indian Ocean",
           "C": "Arctic Ocean",
-          "D": "Atlantic Ocean"
+          "D": "Pacific Ocean"
         }
       },
       {
         "questionId": 4,
-        "question": "Which country is known as the Land of the Rising Sun?",
-        "correctAnswer": "Japan",
+        "question": "Which planet is known as the Red Planet?",
+        "correctAnswer": "Mars",
         "answers": {
-          "A": "India",
-          "B": "China",
-          "C": "South Korea",
-          "D": "Japan"
+          "A": "Venus",
+          "B": "Jupiter",
+          "C": "Mars",
+          "D": "Saturn"
         }
       },
       {
         "questionId": 5,
-        "question": "What is the national animal of India?",
-        "correctAnswer": "Tiger",
+        "question": "Who painted the Mona Lisa?",
+        "correctAnswer": "Leonardo da Vinci",
         "answers": {
-          "A": "Peacock",
-          "B": "Tiger",
-          "C": "Lion",
-          "D": "Elephant"
+          "A": "Vincent van Gogh",
+          "B": "Pablo Picasso",
+          "C": "Leonardo da Vinci",
+          "D": "Claude Monet"
         }
       }
     ]
@@ -81,46 +81,46 @@
       },
       {
         "questionId": 2,
-        "question": "What planet is known as the Red Planet?",
-        "correctAnswer": "Mars",
+        "question": "What is the powerhouse of the cell?",
+        "correctAnswer": "Mitochondria",
         "answers": {
-          "A": "Venus",
-          "B": "Jupiter",
-          "C": "Mars",
-          "D": "Saturn"
+          "A": "Nucleus",
+          "B": "Ribosome",
+          "C": "Mitochondria",
+          "D": "Golgi apparatus"
         }
       },
       {
         "questionId": 3,
-        "question": "What gas do plants absorb from the atmosphere?",
-        "correctAnswer": "Carbon dioxide",
+        "question": "What planet is known for its rings?",
+        "correctAnswer": "Saturn",
         "answers": {
-          "A": "Oxygen",
-          "B": "Carbon dioxide",
-          "C": "Nitrogen",
-          "D": "Helium"
+          "A": "Mars",
+          "B": "Jupiter",
+          "C": "Saturn",
+          "D": "Uranus"
         }
       },
       {
         "questionId": 4,
-        "question": "What is the boiling point of water at sea level?",
-        "correctAnswer": "100°C",
+        "question": "What gas do plants absorb from the atmosphere?",
+        "correctAnswer": "Carbon Dioxide",
         "answers": {
-          "A": "110°C",
-          "B": "90°C",
-          "C": "80°C",
-          "D": "100°C"
+          "A": "Oxygen",
+          "B": "Nitrogen",
+          "C": "Carbon Dioxide",
+          "D": "Hydrogen"
         }
       },
       {
         "questionId": 5,
-        "question": "Which planet is closest to the Sun?",
-        "correctAnswer": "Mercury",
+        "question": "What is the most abundant gas in the Earth's atmosphere?",
+        "correctAnswer": "Nitrogen",
         "answers": {
-          "A": "Mars",
-          "B": "Mercury",
-          "C": "Venus",
-          "D": "Earth"
+          "A": "Oxygen",
+          "B": "Carbon Dioxide",
+          "C": "Nitrogen",
+          "D": "Hydrogen"
         }
       }
     ]
@@ -155,35 +155,35 @@
       },
       {
         "questionId": 3,
-        "question": "In which year did the Titanic sink?",
+        "question": "What year did the Titanic sink?",
         "correctAnswer": "1912",
         "answers": {
-          "A": "1912",
-          "B": "1913",
-          "C": "1910",
-          "D": "1911"
+          "A": "1905",
+          "B": "1912",
+          "C": "1915",
+          "D": "1920"
         }
       },
       {
         "questionId": 4,
-        "question": "Who discovered America?",
-        "correctAnswer": "Christopher Columbus",
+        "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+        "correctAnswer": "Amelia Earhart",
         "answers": {
-          "A": "Leif Erikson",
-          "B": "Christopher Columbus",
-          "C": "Ferdinand Magellan",
-          "D": "Amerigo Vespucci"
+          "A": "Bessie Coleman",
+          "B": "Amelia Earhart",
+          "C": "Harriet Quimby",
+          "D": "Sally Ride"
         }
       },
       {
         "questionId": 5,
-        "question": "What was the name of the ship that brought the Pilgrims to America in 1620?",
-        "correctAnswer": "The Mayflower",
+        "question": "In which year did World War II end?",
+        "correctAnswer": "1945",
         "answers": {
-          "A": "The Pinta",
-          "B": "The Mayflower",
-          "C": "The Nina",
-          "D": "The Santa Maria"
+          "A": "1940",
+          "B": "1945",
+          "C": "1950",
+          "D": "1939"
         }
       }
     ]
@@ -218,35 +218,728 @@
       },
       {
         "questionId": 3,
-        "question": "What is the highest mountain in the world?",
-        "correctAnswer": "Mount Everest",
+        "question": "What is the capital city of Japan?",
+        "correctAnswer": "Tokyo",
         "answers": {
-          "A": "Mount Kilimanjaro",
-          "B": "Mount Everest",
-          "C": "Mount Elbrus",
-          "D": "K2"
+          "A": "Seoul",
+          "B": "Beijing",
+          "C": "Tokyo",
+          "D": "Bangkok"
         }
       },
       {
         "questionId": 4,
-        "question": "Which country has the most population?",
-        "correctAnswer": "China",
+        "question": "Which country has the most natural lakes?",
+        "correctAnswer": "Canada",
         "answers": {
-          "A": "India",
-          "B": "United States",
-          "C": "China",
-          "D": "Russia"
+          "A": "Russia",
+          "B": "Canada",
+          "C": "United States",
+          "D": "India"
         }
       },
       {
         "questionId": 5,
-        "question": "What is the smallest country in the world by land area?",
+        "question": "What is the smallest country in the world?",
         "correctAnswer": "Vatican City",
         "answers": {
           "A": "Monaco",
           "B": "Vatican City",
           "C": "San Marino",
           "D": "Liechtenstein"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 5,
+    "quizName": "Mathematics",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "What is the square root of 144?",
+        "correctAnswer": "12",
+        "answers": {
+          "A": "10",
+          "B": "12",
+          "C": "14",
+          "D": "16"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "What is 15% of 200?",
+        "correctAnswer": "30",
+        "answers": {
+          "A": "20",
+          "B": "25",
+          "C": "30",
+          "D": "35"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "What is 7 times 8?",
+        "correctAnswer": "56",
+        "answers": {
+          "A": "54",
+          "B": "56",
+          "C": "58",
+          "D": "60"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "What is the value of pi to two decimal places?",
+        "correctAnswer": "3.14",
+        "answers": {
+          "A": "3.12",
+          "B": "3.14",
+          "C": "3.16",
+          "D": "3.18"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "What is 10 squared?",
+        "correctAnswer": "100",
+        "answers": {
+          "A": "90",
+          "B": "100",
+          "C": "110",
+          "D": "120"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 6,
+    "quizName": "Literature",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "Who wrote 'Pride and Prejudice'?",
+        "correctAnswer": "Jane Austen",
+        "answers": {
+          "A": "Charlotte Brontë",
+          "B": "Jane Austen",
+          "C": "Emily Dickinson",
+          "D": "Mark Twain"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "What is the title of the first Harry Potter book?",
+        "correctAnswer": "Harry Potter and the Sorcerer's Stone",
+        "answers": {
+          "A": "Harry Potter and the Chamber of Secrets",
+          "B": "Harry Potter and the Prisoner of Azkaban",
+          "C": "Harry Potter and the Sorcerer's Stone",
+          "D": "Harry Potter and the Goblet of Fire"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "What is the main theme of 'The Great Gatsby'?",
+        "correctAnswer": "The American Dream",
+        "answers": {
+          "A": "Love",
+          "B": "The American Dream",
+          "C": "War",
+          "D": "Friendship"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "Who is the author of '1984'?",
+        "correctAnswer": "George Orwell",
+        "answers": {
+          "A": "Aldous Huxley",
+          "B": "Ray Bradbury",
+          "C": "George Orwell",
+          "D": "Philip K. Dick"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "In which novel does the character 'Holden Caulfield' appear?",
+        "correctAnswer": "The Catcher in the Rye",
+        "answers": {
+          "A": "To Kill a Mockingbird",
+          "B": "The Catcher in the Rye",
+          "C": "The Grapes of Wrath",
+          "D": "The Old Man and the Sea"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 7,
+    "quizName": "Movies",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "Who directed 'Jurassic Park'?",
+        "correctAnswer": "Steven Spielberg",
+        "answers": {
+          "A": "George Lucas",
+          "B": "James Cameron",
+          "C": "Steven Spielberg",
+          "D": "Peter Jackson"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "Which movie features a character named 'Forrest Gump'?",
+        "correctAnswer": "Forrest Gump",
+        "answers": {
+          "A": "The Shawshank Redemption",
+          "B": "Forrest Gump",
+          "C": "Titanic",
+          "D": "The Godfather"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "What is the highest-grossing film of all time?",
+        "correctAnswer": "Avatar",
+        "answers": {
+          "A": "Titanic",
+          "B": "Avatar",
+          "C": "Star Wars",
+          "D": "The Avengers"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "Who played Jack Dawson in 'Titanic'?",
+        "correctAnswer": "Leonardo DiCaprio",
+        "answers": {
+          "A": "Johnny Depp",
+          "B": "Brad Pitt",
+          "C": "Leonardo DiCaprio",
+          "D": "Tom Hanks"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "What is the main theme of 'The Matrix'?",
+        "correctAnswer": "Reality vs. Illusion",
+        "answers": {
+          "A": "Love",
+          "B": "Friendship",
+          "C": "Reality vs. Illusion",
+          "D": "Good vs. Evil"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 8,
+    "quizName": "Music",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "Who is known as the King of Pop?",
+        "correctAnswer": "Michael Jackson",
+        "answers": {
+          "A": "Elvis Presley",
+          "B": "Michael Jackson",
+          "C": "Prince",
+          "D": "Madonna"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "What is the highest-selling album of all time?",
+        "correctAnswer": "Thriller",
+        "answers": {
+          "A": "Back in Black",
+          "B": "The Dark Side of the Moon",
+          "C": "Thriller",
+          "D": "The Bodyguard"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "Which band was Freddie Mercury the lead singer of?",
+        "correctAnswer": "Queen",
+        "answers": {
+          "A": "The Beatles",
+          "B": "Queen",
+          "C": "Led Zeppelin",
+          "D": "The Rolling Stones"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "What genre of music did Beethoven compose?",
+        "correctAnswer": "Classical",
+        "answers": {
+          "A": "Jazz",
+          "B": "Rock",
+          "C": "Classical",
+          "D": "Pop"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "What instrument does a pianist play?",
+        "correctAnswer": "Piano",
+        "answers": {
+          "A": "Guitar",
+          "B": "Drums",
+          "C": "Piano",
+          "D": "Violin"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 9,
+    "quizName": "Technology",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "What does HTML stand for?",
+        "correctAnswer": "HyperText Markup Language",
+        "answers": {
+          "A": "HyperText Markup Language",
+          "B": "HighText Machine Language",
+          "C": "Hyperlink and Text Markup Language",
+          "D": "HyperText Multi-Language"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "What is the main function of the CPU?",
+        "correctAnswer": "Process Data",
+        "answers": {
+          "A": "Store Data",
+          "B": "Process Data",
+          "C": "Display Data",
+          "D": "Retrieve Data"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "What does RAM stand for?",
+        "correctAnswer": "Random Access Memory",
+        "answers": {
+          "A": "Read Access Memory",
+          "B": "Random Access Memory",
+          "C": "Readily Available Memory",
+          "D": "Rapid Access Memory"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "What is the name of the first electronic computer?",
+        "correctAnswer": "ENIAC",
+        "answers": {
+          "A": "ENIAC",
+          "B": "UNIVAC",
+          "C": "Colossus",
+          "D": "Z3"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "Which company developed the iPhone?",
+        "correctAnswer": "Apple",
+        "answers": {
+          "A": "Microsoft",
+          "B": "Apple",
+          "C": "Samsung",
+          "D": "Nokia"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 10,
+    "quizName": "Sports",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "What is the national sport of Japan?",
+        "correctAnswer": "Sumo Wrestling",
+        "answers": {
+          "A": "Karate",
+          "B": "Baseball",
+          "C": "Sumo Wrestling",
+          "D": "Judo"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "Which country won the FIFA World Cup in 2018?",
+        "correctAnswer": "France",
+        "answers": {
+          "A": "Brazil",
+          "B": "Germany",
+          "C": "France",
+          "D": "Argentina"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "In which sport is the term 'home run' used?",
+        "correctAnswer": "Baseball",
+        "answers": {
+          "A": "Football",
+          "B": "Baseball",
+          "C": "Cricket",
+          "D": "Basketball"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "What is the maximum score in a single game of bowling?",
+        "correctAnswer": "300",
+        "answers": {
+          "A": "200",
+          "B": "250",
+          "C": "300",
+          "D": "350"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "Who holds the record for the most home runs in MLB history?",
+        "correctAnswer": "Barry Bonds",
+        "answers": {
+          "A": "Babe Ruth",
+          "B": "Hank Aaron",
+          "C": "Barry Bonds",
+          "D": "Alex Rodriguez"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 11,
+    "quizName": "Art",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "Who painted the Sistine Chapel ceiling?",
+        "correctAnswer": "Michelangelo",
+        "answers": {
+          "A": "Raphael",
+          "B": "Leonardo da Vinci",
+          "C": "Michelangelo",
+          "D": "Caravaggio"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "Which artist is known for the 'Blue Period'?",
+        "correctAnswer": "Pablo Picasso",
+        "answers": {
+          "A": "Vincent van Gogh",
+          "B": "Pablo Picasso",
+          "C": "Claude Monet",
+          "D": "Henri Matisse"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "What is the primary medium used in watercolor painting?",
+        "correctAnswer": "Watercolor",
+        "answers": {
+          "A": "Acrylic",
+          "B": "Oil",
+          "C": "Watercolor",
+          "D": "Charcoal"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "What style of painting is characterized by small dots of color?",
+        "correctAnswer": "Pointillism",
+        "answers": {
+          "A": "Impressionism",
+          "B": "Cubism",
+          "C": "Pointillism",
+          "D": "Surrealism"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "What is the name of the famous painting by Edvard Munch that depicts a figure with a distorted face?",
+        "correctAnswer": "The Scream",
+        "answers": {
+          "A": "The Kiss",
+          "B": "The Scream",
+          "C": "Starry Night",
+          "D": "Guernica"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 12,
+    "quizName": "Nature",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "What is the largest mammal in the world?",
+        "correctAnswer": "Blue Whale",
+        "answers": {
+          "A": "African Elephant",
+          "B": "Blue Whale",
+          "C": "Giraffe",
+          "D": "Hippopotamus"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "Which animal is known as the 'King of the Jungle'?",
+        "correctAnswer": "Lion",
+        "answers": {
+          "A": "Tiger",
+          "B": "Elephant",
+          "C": "Lion",
+          "D": "Cheetah"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "What type of animal is a 'puffin'?",
+        "correctAnswer": "Bird",
+        "answers": {
+          "A": "Mammal",
+          "B": "Fish",
+          "C": "Reptile",
+          "D": "Bird"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "What is the fastest land animal?",
+        "correctAnswer": "Cheetah",
+        "answers": {
+          "A": "Lion",
+          "B": "Cheetah",
+          "C": "Horse",
+          "D": "Tiger"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "What is the largest bird in the world?",
+        "correctAnswer": "Ostrich",
+        "answers": {
+          "A": "Eagle",
+          "B": "Penguin",
+          "C": "Ostrich",
+          "D": "Albatross"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 13,
+    "quizName": "Food",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "What is the main ingredient in guacamole?",
+        "correctAnswer": "Avocado",
+        "answers": {
+          "A": "Tomato",
+          "B": "Avocado",
+          "C": "Onion",
+          "D": "Pepper"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "Which fruit is known as the 'king of fruits'?",
+        "correctAnswer": "Mango",
+        "answers": {
+          "A": "Apple",
+          "B": "Mango",
+          "C": "Banana",
+          "D": "Pineapple"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "What is the primary ingredient in sushi?",
+        "correctAnswer": "Rice",
+        "answers": {
+          "A": "Noodles",
+          "B": "Bread",
+          "C": "Rice",
+          "D": "Potato"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "What type of cheese is used in a traditional lasagna?",
+        "correctAnswer": "Ricotta",
+        "answers": {
+          "A": "Cheddar",
+          "B": "Mozzarella",
+          "C": "Ricotta",
+          "D": "Parmesan"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "What is the most popular pizza topping?",
+        "correctAnswer": "Pepperoni",
+        "answers": {
+          "A": "Mushrooms",
+          "B": "Pepperoni",
+          "C": "Olives",
+          "D": "Onions"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 14,
+    "quizName": "Travel",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "What is the most visited city in the world?",
+        "correctAnswer": "Bangkok",
+        "answers": {
+          "A": "London",
+          "B": "Paris",
+          "C": "Bangkok",
+          "D": "New York"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "Which country is known as the Land of the Rising Sun?",
+        "correctAnswer": "Japan",
+        "answers": {
+          "A": "China",
+          "B": "Japan",
+          "C": "Thailand",
+          "D": "South Korea"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "What is the capital city of Italy?",
+        "correctAnswer": "Rome",
+        "answers": {
+          "A": "Florence",
+          "B": "Venice",
+          "C": "Rome",
+          "D": "Milan"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "What is the currency of the United Kingdom?",
+        "correctAnswer": "Pound Sterling",
+        "answers": {
+          "A": "Euro",
+          "B": "Dollar",
+          "C": "Yen",
+          "D": "Pound Sterling"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "Which landmark is known as a symbol of love?",
+        "correctAnswer": "Taj Mahal",
+        "answers": {
+          "A": "Eiffel Tower",
+          "B": "Statue of Liberty",
+          "C": "Taj Mahal",
+          "D": "Big Ben"
+        }
+      }
+    ]
+  },
+  {
+    "quizId": 15,
+    "quizName": "Languages",
+    "activeQuestion": 1,
+    "correctedAnswer": 0,
+    "questions": [
+      {
+        "questionId": 1,
+        "question": "What is the most spoken language in the world?",
+        "correctAnswer": "Mandarin Chinese",
+        "answers": {
+          "A": "Spanish",
+          "B": "English",
+          "C": "Mandarin Chinese",
+          "D": "Hindi"
+        }
+      },
+      {
+        "questionId": 2,
+        "question": "Which language is known for having the most words?",
+        "correctAnswer": "English",
+        "answers": {
+          "A": "English",
+          "B": "Chinese",
+          "C": "Arabic",
+          "D": "German"
+        }
+      },
+      {
+        "questionId": 3,
+        "question": "What is the official language of Brazil?",
+        "correctAnswer": "Portuguese",
+        "answers": {
+          "A": "Spanish",
+          "B": "Portuguese",
+          "C": "English",
+          "D": "French"
+        }
+      },
+      {
+        "questionId": 4,
+        "question": "What is the second most spoken language in the world?",
+        "correctAnswer": "Spanish",
+        "answers": {
+          "A": "French",
+          "B": "Spanish",
+          "C": "English",
+          "D": "Arabic"
+        }
+      },
+      {
+        "questionId": 5,
+        "question": "Which language uses the Cyrillic alphabet?",
+        "correctAnswer": "Russian",
+        "answers": {
+          "A": "Bulgarian",
+          "B": "Ukrainian",
+          "C": "Serbian",
+          "D": "Russian"
         }
       }
     ]

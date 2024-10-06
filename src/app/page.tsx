@@ -29,6 +29,7 @@ export default function Home() {
     }
     setLoader(false);
   }, [activeQuiz]);
+  
 
   return (
     <div
