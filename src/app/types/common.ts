@@ -61,7 +61,6 @@ interface QuizInProgress {
   setCheck: React.Dispatch<React.SetStateAction<boolean>>;
   setIsDisabled: React.Dispatch<React.SetStateAction<boolean>>;
   setActiveQuiz: React.Dispatch<React.SetStateAction<Quiz | null>>;
-  error: boolean;
   theme: "light" | "dark";
 }
 interface QuizEnded {

@@ -2,6 +2,10 @@ import { VscError } from "react-icons/vsc";
 import QuestionBtn from "./QuestionBtn";
 import Progress from "./Progress";
 import { useState } from "react";
+import {
+  handleNextQuestion,
+  handleSubmit,
+} from "./services/quizInProgress.service";
 
 const QuizInProgress = (props: QuizInProgress) => {
   const {
@@ -17,55 +21,11 @@ const QuizInProgress = (props: QuizInProgress) => {
     setCheck,
     setIsDisabled,
     setActiveQuiz,
-    error,
     theme,
   } = props;
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [focus, setFocus] = useState("");
-
-  const handleSubmit = () => {
-    console.log(clientAnswer);
-    setError(clientAnswer === "");
-
-    if (clientAnswer !== "") {
-      setCheck(true);
-      setgoToNext(true);
-      setIsDisabled(true);
-      setIsSubmitting(true);
-
-      if (clientAnswer === shownQuestionOBJ?.correctAnswer) {
-        setActiveQuiz((prev) => {
-          if (!prev) {
-            return null;
-          } else {
-            return {
-              ...prev,
-              correctedAnswer: (prev?.correctedAnswer || 0) + 1,
-            };
-          }
-        });
-      }
-    }
-  };
-
-  const handleNextQuestion = () => {
-    setgoToNext(false);
-    setCheck(false);
-    setIsDisabled(false);
-    setActiveQuiz((prev) => {
-      if (!prev) {
-        return null;
-      } else {
-        return {
-          ...prev,
-          activeQuestion: prev.activeQuestion + 1,
-        };
-      }
-    });
-    setClientAnswer("");
-    setFocus("");
-  };
 
   return (
     <div className="flex flex-col gap-3 md:w-[70%] xl:flex-row xl:w-full xl:items-center xl:justify-between xl:gap-20">
@@ -104,14 +64,34 @@ const QuizInProgress = (props: QuizInProgress) => {
             ))}
             {goToNext ? (
               <button
-                onClick={handleNextQuestion}
+                onClick={() =>
+                  handleNextQuestion(
+                    setgoToNext,
+                    setCheck,
+                    setIsDisabled,
+                    setActiveQuiz,
+                    setClientAnswer,
+                    setFocus
+                  )
+                }
                 className="tubik hoverBg font-[500] w-full bg-[#A729F5] text-[18px] text-[#FFFF] p-2 rounded-xl md:text-[28px] md:rounded-3xl md:p-5"
               >
                 Next Question
               </button>
             ) : (
               <button
-                onClick={handleSubmit}
+                onClick={() =>
+                  handleSubmit(
+                    setError,
+                    clientAnswer,
+                    setCheck,
+                    setgoToNext,
+                    setIsDisabled,
+                    setIsSubmitting,
+                    shownQuestionOBJ,
+                    setActiveQuiz
+                  )
+                }
                 className="tubik hoverBg font-[500] w-full bg-[#A729F5] text-[18px] text-[#FFFF] p-2 rounded-xl md:text-[28px] md:rounded-3xl md:p-5"
               >
                 Submit

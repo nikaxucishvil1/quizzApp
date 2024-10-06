@@ -29,7 +29,6 @@ const Quiz = (props: {
           activeQuiz={activeQuiz}
           check={check}
           clientAnswer={clientAnswer}
-          error={error}
           goToNext={goToNext}
           isDisabled={isDisabled}
           setgoToNext={setgoToNext}
