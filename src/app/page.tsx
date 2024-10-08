@@ -32,10 +32,10 @@ export default function Home() {
 
   return (
     <div
-      className="w-full bg-[#F4F6FA] relative dark:bg-[#313E51] md:p-4 xl:p-10 h-screen xl:overflow-hidden overflow-auto"
+      className="w-full bg-[#F4F6FA] relative dark:bg-[#313E51] xl:p-10 h-screen xl:overflow-hidden"
       style={{ zIndex: 10 }}
     >
-      <div className="z-10 relative md:h-full">
+      <div className="relative xl:h-full bg-[#F4F6FA] dark:bg-[#313E51] md:p-4 xl:p-0">
         {loader ? (
           <div className="w-full h-screen flex items-center justify-center">
             <div className="loaderr"></div>
