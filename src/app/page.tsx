@@ -29,11 +29,10 @@ export default function Home() {
     }
     setLoader(false);
   }, [activeQuiz]);
-  
 
   return (
     <div
-      className="w-full bg-[#F4F6FA] h-screen relative overflow-hidden dark:bg-[#313E51] md:p-4 xl:p-10"
+      className="w-full bg-[#F4F6FA] relative dark:bg-[#313E51] md:p-4 xl:p-10 h-screen xl:overflow-hidden overflow-auto"
       style={{ zIndex: 10 }}
     >
       <div className="z-10 relative md:h-full">
@@ -65,13 +64,13 @@ export default function Home() {
         )}
       </div>
       {!loader && (
-        <div>
+        <div className="">
           <div
             className="hidden md:block absolute w-[977px] h-[977px] xl:left-[-500px] xl:top-[-300px] left-[-602px] top-[-165px] md:top-[-600px] rounded-[977px] border-[144px] border-[#EDF1F9] dark:border-[#2D3949]"
             style={{ zIndex: 0 }}
           ></div>
           <div
-            className="hidden xl:block absolute w-[977px] h-[977px] right-[-602px] bottom-[-165px] xl:bottom-[-300px] xl:right-[-500px] rounded-[977px] border-[144px] border-[#EDF1F9] dark:border-[#2D3949]"
+            className="hidden xl:block absolute w-[977px] h-[977px] right-[-602px] bottom-[-165px] xl:bottom-[-300px] xl:right-[-500px] rounded-[977px] border-[144px] border-[#EDF1F9] dark:border-[#2D3949] "
             style={{ zIndex: 0 }}
           ></div>
         </div>
