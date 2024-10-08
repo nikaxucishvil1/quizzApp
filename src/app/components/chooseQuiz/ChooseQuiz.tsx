@@ -10,7 +10,7 @@ const ChooseQuiz = (props: ChoozeQuiz) => {
     .slice(0, RANDOM_QUIZ_NUMBER);
 
   return (
-    <div className="p-4 pt-0 flex flex-col xl:flex-row xl:justify-around md:pt-20 gap-7 md:w-[70%] md:h-full xl:items-center xl:p-0 xl:w-full">
+    <div className="p-4 pt-0 flex flex-col xl:flex-row xl:justify-around md:pt-20 gap-7 md:w-[70%] md:h-full xl:items-center xl:w-full">
       <div className="xl:h-[50%]">
         <header className="flex flex-col items-start gap-4 xl:gap-7">
           <div className="flex flex-col">

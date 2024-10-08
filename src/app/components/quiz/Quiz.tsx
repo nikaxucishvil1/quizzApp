@@ -22,7 +22,7 @@ const Quiz = (props: {
   const isFinished = activeQuiz.activeQuestion > activeQuiz.questions.length;
 
   return (
-    <div className="p-4 flex flex-col md:items-center md:w-full  xl:h-full xl:items-center xl:justify-center">
+    <div className="p-4 flex flex-col md:items-center md:w-full  xl:h-full xl:items-center xl:justify-center xl:pt-20">
       {!isFinished ? (
         <div className="w-full md:flex md:flex-col md:items-center md:justify-center ">
           <QuizInProgress
