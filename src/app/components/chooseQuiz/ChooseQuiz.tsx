@@ -1,8 +1,9 @@
 import { GiMaterialsScience } from "react-icons/gi";
+import { memo } from "react";
 
 const ChooseQuiz = (props: ChoozeQuiz) => {
   const { quizData, setActiveQuiz, setQuizName } = props;
-  
+
   const RANDOM_QUIZ_NUMBER = 5;
 
   const randomFiveQuiz = quizData
@@ -52,4 +53,4 @@ const ChooseQuiz = (props: ChoozeQuiz) => {
   );
 };
 
-export default ChooseQuiz;
+export default memo(ChooseQuiz);
